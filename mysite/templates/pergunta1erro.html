@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!--<!DOCTYPE html>
 <html>
 <head>
     <title>PáginaOlá. Seja bem vindo ao chatbot do SiDi.</title>
@@ -9,5 +9,46 @@
         <input type="text" name="resposta" placeholder="Por favor, insira o código da vaga:">
         <input type="submit" value="Enviar">
     </form>
+</body>
+</html>
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chatbot SiDi</title>
+    <link rel="stylesheet" href="static/style.css">
+
+    <style>
+    .chat-message {
+    animation: blink 2s ease-in-out 1;
+    }
+
+    @keyframes blink {
+        0%, 100% {
+        background-color: #f2ffe6;
+        }
+        50% {
+        background-color: red;
+    }
+
+    </style>
+
+</head>
+<body>
+  <div class="chat-container">
+    <h1>Chatbot SiDi</h1>
+    <div class="chat-message user-message">
+      <div class="message-content">Código da vaga não existe. Por favor, verfique e informe novamente.</div>
+    </div>
+
+
+    <form method="post" action="/pergunta1">
+    <div class="message-input">
+      <input type="text" name="resposta" placeholder="Digite sua mensagem">
+      <button type="submit" value="Enviar">Enviar</button>
+    </div>
+    </form>
+  </div>
 </body>
 </html>

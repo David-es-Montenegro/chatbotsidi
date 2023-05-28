@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!--<!DOCTYPE html>
 <html>
 <head>
     <title>confirmação</title>
@@ -13,5 +13,34 @@
     <button type="submit">Enviar</button>
 </form>
 
+</body>
+</html>
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chatbot SiDi</title>
+    <link rel="stylesheet" href="static/style.css">
+
+</head>
+<body>
+  <div class="chat-container">
+    <h1>Chatbot SiDi</h1>
+    <div class="chat-message user-message">
+      <div class="message-content">Tudo certo ! Você deseja confirmar sua candidatura ?</div>
+    </div>
+
+
+    <form method="post" action="/pergunta9">
+    <div class="message-input">
+    <input type="radio" name="resposta" value="sim" id="sim">
+    <label for="sim">Sim</label>
+    <input type="radio" name="resposta" value="nao" id="não">
+    <label for="não">Não</label>
+    <button type="submit" value="Enviar">Enviar</button>
+    </div>
+    </form>
+  </div>
 </body>
 </html>

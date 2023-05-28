@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!--<!DOCTYPE html>
 <html>
 <head>
     <title>Certo, para prosseguir, preciso lhe fazer umas perguntas</title>
@@ -13,5 +13,36 @@
     <button type="submit">Enviar</button>
 </form>
 
+</body>
+</html>
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chatbot SiDi</title>
+    <link rel="stylesheet" href="static/style.css">
+
+</head>
+<body>
+  <div class="chat-container">
+    <h1>Chatbot SiDi</h1>
+    <div class="chat-message user-message">
+      <div class="message-content">Certo, para prosseguir, preciso lhe fazer umas perguntas</div>
+      <div class="message-content">Você tem conhecimento do idioma inglês intermediário/avançado?</div>
+    </div>
+
+
+     <form method="post" action="/pergunta2">
+    <input type="radio" name="resposta" value="sim" id="sim">
+    <label for="sim">Sim</label>
+    <input type="radio" name="resposta" value="nao" id="não">
+    <label for="não">Não</label>
+
+    <div class="message-input">
+    <button type="submit" value="Enviar">Enviar</button>
+    </div>
+    </form>
+  </div>
 </body>
 </html>

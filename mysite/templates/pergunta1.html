@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!--<!DOCTYPE html>
 <html>
 <head>
     <title>PáginaOlá. Seja bem vindo ao chatbot do SiDi.</title>
@@ -9,5 +9,33 @@
         <input type="text" name="resposta" placeholder="Por favor, insira o código da vaga:">
         <input type="submit" value="Enviar">
     </form>
+</body>
+</html>
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chatbot SiDi</title>
+    <link rel="stylesheet" href="static/style.css">
+
+</head>
+<body>
+  <div class="chat-container">
+    <h1>Chatbot SiDi</h1>
+    <div class="chat-message user-message">
+      <div class="message-content">Olá. Seja bem vindo ao chatbot do SiDi. <br> Por favor, insira o código da vaga:</div>
+    </div>
+
+
+    <form method="post" action="/pergunta1">
+    <div class="message-input">
+      <input type="text" name="resposta" placeholder="Digite sua mensagem">
+      <button type="submit" value="Enviar" onclick="sendMessage()">Enviar</button>
+    </div>
+    </form>
+  </div>
+
+<script src="script.js"></script>
 </body>
 </html>
